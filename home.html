@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Personal Portfolio Muhashar</title>
+    <link rel="icon" href="items/icon.png" type="logo" style="width: auto; height: 1vh;">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Navbar -->
+        <nav>
+            <h1 class="logo">Muhashar.</h1>
+            <div class="links">
+                <a href="home.html" class="active">Home</a>
+                <a href="works.html" class="inac">Works</a>
+                <a href="achievement.html" class="inac">Achievement</a>
+                <a href="experiences.html" class="inac">Experiences</a>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="bars()"></i>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Shorted Navbar -->
+        <div class="short" id="short">
+            <div class="top">
+                <h1>Muhashar.</h1>
+                <i class="fa-solid fa-xmark" onclick="cancel()"></i>
+            </div>
+            <div class="bot">
+                <div class="links">
+                    <a href="home.html" class="active">Home</a>
+                    <a href="works.html">Works</a>
+                    <a href="achievement.html">Achievement</a>
+                    <a href="experiences.html">Experiences</a>
+                </div>
+            </div>
+        </div>
+        <!-- Shorted Navbar End -->
+
+        <!-- Hero Main Content -->
+        <div class="wraper">
+            <div class="media" data-aos="fade-up" data-aos-duration="1300">
+                <a href="https://youtube.com/qarhidn"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://instagram.com/qarh_project"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/andromeda-harahap-9b893030b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="herocon">
+                <h1 data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">Welcome To My<br><span>Portfolio Website</span></h1>
+                <a href="#" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="800">See More</a>
+            </div>
+        </div>
+        <!-- Hero Main Content End -->
+
+        <!-- Footer Image -->
+        <img src="items/Vector.svg" alt="">
+        <!-- Footer Image End -->
+    </section>
+    <!-- Hero Section -->
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="aboutcon">
+            <img src="items/IMG.jpg" alt="Muhashar" data-aos="fade-right" data-aos-duration="1300" data-aos-delay="300">
+            <div class="profile" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="300">
+                <div class="protle">
+                    <h2>Hello There! I'm...</h2>
+                    <h1>Andromeda Harahap</h1>
+                    <div class="typewriter"><span class="typewriter-text"></span><label for=""> |</label></div>
+                </div>
+                <p>Here, you can see my profiles and explore the skills I offer. You can also view and access my works and projects I have done.</p>
+                <div class="proskill">
+                    <a href="#">Web Development</a>
+                    <a href="#">HTML/CSS</a>
+                    <a href="#">JavaScript</a>
+                    <a href="#">Tailwind CSS</a>
+                </div>
+                <div class="prombol">
+                    <a href="#">See More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="aboutme">
+            <h1 data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">About Me</h1>
+            <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="600"><span>Andromeda Harahap:</span> As a vocational student who has an interest in Web Development and Speaking, he became a person who studied these things. Currently, he still often studies various kinds of the latest technology that is more efficiently used by all programmers in the world.</p>
+            <div class="tombols" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="900">
+                <a href="#"><i class="fa-solid fa-arrow-down"></i> Download CV</a>
+                <a href="#"><i class="fa-solid fa-code"></i> View Projects</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Works Section -->
+    <section class="library">
+        <!-- Library Header -->
+        <div class="upper">
+            <h1 data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">Portfolio Library</h1>
+            <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="600">Contains everything about the achievements, skills and certificates that I have received so far, here also explains the background and process of how all these achievements can be achieved.</p>
+            <div class="libraryList" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="900">
+                <button id="certButton" onclick="showCert()"><i class="fa-solid fa-bookmark"></i> Certificate</button>
+                <button id="projButton" onclick="showProject()"><i class="fa-solid fa-code"></i> Projects</button>
+                <button id="achButton"  onclick="showAchiev()"><i class="fa-solid fa-layer-group"></i> Achievement</button>
+            </div>
+        </div>
+        <!-- Library Header End -->
+
+        <!-- Library Container -->
+        <div class="libcon" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="1200">
+            <!-- Certificate Library -->
+            <div class="libcard" id="certificate">
+                <div class="card">
+                    <img src="items/html.jpg" alt="">
+                    <div class="cardcon">
+                        <h1>HTML Certificate</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo tempore odio numquam maxime alias delectus quasi doloremque perspiciatis enim?</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/css.jpg" alt="">
+                    <div class="cardcon">
+                        <h1>CSS Certificate</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo tempore odio numquam maxime alias delectus quasi doloremque perspiciatis enim?</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/js.jpg" alt="">
+                    <div class="cardcon">
+                        <h1>JavaScript Certificate</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo tempore odio numquam maxime alias delectus quasi doloremque perspiciatis enim?</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/web.png" alt="">
+                    <div class="cardcon">
+                        <h1>Web Competition Certificate</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo tempore odio numquam maxime alias delectus quasi doloremque perspiciatis enim?</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificate Library End -->
+
+            <!-- Project Library -->
+            <div class="libcard" id="projects">
+                <div class="card">
+                    <img src="items/project1.png" alt="">
+                    <div class="cardcon">
+                        <h1>Nusture Website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo tempore odio numquam maxime alias delectus quasi doloremque perspiciatis enim?</p>
+                        <a href="https://muhammadandromeda.github.io/nusture">See Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/project2.png" alt="">
+                    <div class="cardcon">
+                        <h1>LeafGreen Website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo tempore odio numquam maxime alias delectus quasi doloremque perspiciatis enim?</p>
+                        <a href="https://muhammadandromeda.github.io/LeafGreen/">See Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/project3.png" alt="">
+                    <div class="cardcon">
+                        <h1>Network Boy Portfolio Website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo tempore odio numquam maxime alias delectus quasi doloremque perspiciatis enim?</p>
+                        <a href="https://muhammadandromeda.github.io/alvin/">See Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/project4.png" alt="">
+                    <div class="cardcon">
+                        <h1>XOURCE Website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo tempore odio numquam maxime alias delectus quasi doloremque perspiciatis enim?</p>
+                        <a href="https://muhammadandromeda.github.io/xource/">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Library End-->
+
+            <!-- Achievement Library -->
+            <div class="libcard" id="achievement">
+                <div class="card">
+                    <img src="items/ach1.jpg" alt="">
+                    <div class="cardcon">
+                        <h1>1st Design Web Competition</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero vitae maiores adipisci ex praesentium fuga, sed sapiente facilis pariatur sit eius iure magni obcaecati, consectetur iusto officia a necessitatibus, aspernatur fugit minima assumenda. Dignissimos?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/ach2.png" alt="">
+                    <div class="cardcon">
+                        <h1>IT Trainer in High School</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero vitae maiores adipisci ex praesentium fuga, sed sapiente facilis pariatur sit eius iure magni obcaecati, consectetur iusto officia a necessitatibus, aspernatur fugit minima assumenda. Dignissimos?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/ach3.png" alt="">
+                    <div class="cardcon">
+                        <h1>Python Coding Competition</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero vitae maiores adipisci ex praesentium fuga, sed sapiente facilis pariatur sit eius iure magni obcaecati, consectetur iusto officia a necessitatibus, aspernatur fugit minima assumenda. Dignissimos?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="items/ach4.png" alt="">
+                    <div class="cardcon">
+                        <h1>Speaker in Middle School</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero vitae maiores adipisci ex praesentium fuga, sed sapiente facilis pariatur sit eius iure magni obcaecati, consectetur iusto officia a necessitatibus, aspernatur fugit minima assumenda. Dignissimos?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Achievement Library End-->
+        </div>
+        <!-- Library Container End -->
+    </section>
+    <!-- Works Section End -->
+
+    <!-- Closing Section -->
+    <section class="closing">
+        <h1>Ready To Start a <span>Project</span> Together?</h1>
+        <p>I'm now available for freelance and internship work. Have any projects in your mind? Just feel free to contact me</p>
+        <div class="closebutton">
+            <a href="#">Contact Me</a>
+            <a href="#">Download My CV</a>
+        </div>
+    </section>
+    <!-- Closing Section End -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="head">
+            <div class="nav">
+                <a class="active" href="home.html">Home</a>
+                <a class="inac" href="works.html">Works</a>
+                <a class="inac" href="achievement.html">Achievement</a>
+                <a class="inac" href="experiences.html">Experiences</a>
+            </div>
+        </div>
+        <div class="foot">
+            <p class="copy">&copy; 2025-Andromeda-Harahap. All right reserved</p>
+            <div class="contact">
+                <p><i class="fa-regular fa-envelope"></i> 2009.andromeda@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +62 811-162-409</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Script End -->
+</body>
+</html>
